@@ -1,5 +1,7 @@
 #Phase 1: The Word’s Birth
+
 #Goal: Capture a player-submitted word, spawn a glowing physical object whose appearance is procedurally generated, and trigger echo effects (visual/audio) based on the word. Modular Logic:
+
 #The player interacts with a Button Device to submit their word.
 The Verse device processes the word, calculates its length and vowels, determines a color using the first letter, and manipulates a Creative Prop for physical manifestation.
 A VFX Spawner Device and Audio Player Device bind effects and sounds to the prop.
@@ -62,3 +64,4 @@ You can expand challenge logic by adding more device interactions or using Verse
 Assign different buffs/items per word theme using UEFN item/buff assets.
 
 For multiplayer, expand each event handler to support multiple agents and synchronize progression.
+
