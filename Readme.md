@@ -48,15 +48,19 @@ Each device uses @editable references for flexible assignment of game objects/ef
 You can swap VFX, audio assets, platform objects, orb props, challenge triggers, or evolution effects just by editing device references or replacing code logic in the challenge manager.
 Challenge unlocking is based on tracked properties (length, vowel count, meaning), which makes future additions simple.
 Step-by-Step Setup in UEFN
+
 1. Create Verse Files
 *Verse → Verse Explorer* → right-click folder → New Verse File (name: word_birth_device, word_challenge_manager, word_evolution_device)
 Paste each phase’s code and save.
-2. Build Verse Code
+
+3. Build Verse Code
 *Verse → Build Verse Code* (Ctrl+Shift+B). Devices show in Content Browser.
-3. Place Devices in Level
+
+5. Place Devices in Level
 Drag each Verse device into your level.
 For each, also drag the referenced devices (Button Device, Creative Prop, etc.).
-4. Assign References and Configure Devices
+
+7. Assign References and Configure Devices
 Select each Verse device in Details panel and set:
 For word_birth_device: assign Button Device, Creative Prop, VFX Spawner, Audio Player.
 For word_challenge_manager: assign all triggers, buttons, themed area volume.
@@ -64,13 +68,16 @@ For word_evolution_device: assign evolution VFX, buff granter, evolved prop.
 For platform triggers: set up trigger sequence and linked platforms.
 For logic orbs: use customizable props, assign their colors as needed.
 Themed obstacles: add props/vfx as appropriate for each word’s meaning.
-5. Play-test and Iterate
+
+9. Play-test and Iterate
 Launch session, play through word’s journey, make adjustments for props/challenges/buffs as needed.
+
 Additional Tips
 Adjust procedural glow, sounds, and colors in the Verse code for each word’s “birth.”
 You can expand challenge logic by adding more device interactions or using Verse’s failure context for puzzles.
 Assign different buffs/items per word theme using UEFN item/buff assets.
 
 For multiplayer, expand each event handler to support multiple agents and synchronize progression.
+
 
 
